@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         useMaterial3: true,
         appBarTheme: const AppBarTheme(
+          surfaceTintColor: Colors.white,
           color: Colors.white,
           titleTextStyle: TextStyle(
             color: Colors.black,

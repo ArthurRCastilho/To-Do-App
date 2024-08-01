@@ -12,7 +12,9 @@ class RowAppBarToDo extends StatelessWidget {
       children: [
         const Row(
           children: [
-            CircularProgressIndicator(),
+            CircleAvatar(
+              backgroundColor: Color(0xff7F7F7F),
+            ),
             SizedBox(width: 10),
             Text('To Do List'),
           ],

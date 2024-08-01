@@ -7,15 +7,13 @@ class FloatingButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: FloatingActionButton(
-        backgroundColor: Colors.black,
-        onPressed: () {},
-        child: const Icon(
-          Icons.add,
-          color: Colors.white,
-          size: 30,
-        ),
+    return FloatingActionButton(
+      backgroundColor: Colors.black,
+      onPressed: () {},
+      child: const Icon(
+        Icons.add,
+        color: Colors.white,
+        size: 30,
       ),
     );
   }
