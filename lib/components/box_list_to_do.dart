@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:to_do_app/models/to_do.dart';
+import 'package:to_do_app/core/models/to_do.dart';
 
 class BoxListToDo extends StatefulWidget {
   final ToDo toDo;
@@ -14,8 +14,6 @@ class BoxListToDo extends StatefulWidget {
 }
 
 class _BoxListToDoState extends State<BoxListToDo> {
-  bool isCheck = false;
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -51,17 +49,14 @@ class _BoxListToDoState extends State<BoxListToDo> {
                   height: 40,
                   width: 40,
                   child: FloatingActionButton(
-                    backgroundColor:
-                        isCheck ? Colors.green : const Color(0xff7F7F7F),
+                    backgroundColor: widget.toDo.isConclued
+                        ? Colors.green
+                        : const Color(0xff7F7F7F),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(100),
                     ),
-                    onPressed: () {
-                      setState(() {
-                        isCheck = !isCheck;
-                      });
-                    },
-                    child: Icon(Icons.check),
+                    onPressed: () {},
+                    child: const Icon(Icons.check),
                   ),
                 ),
               ],
