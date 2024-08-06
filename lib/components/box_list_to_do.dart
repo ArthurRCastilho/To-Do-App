@@ -83,7 +83,13 @@ class _BoxListToDoState extends State<BoxListToDo> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(100),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        ToDoService().conclued(widget.toDo);
+
+                        Future.delayed(const Duration(seconds: 5), () {
+                          ToDoService().remove(widget.toDo);
+                        });
+                      },
                       child: const Icon(Icons.check),
                     ),
                   ),

@@ -15,4 +15,8 @@ class ToDo with ChangeNotifier {
     required this.description,
     this.date,
   }) : id = id ?? Random().nextDouble().toString();
+
+  bool toggleIsConclued() {
+    return isConclued = !isConclued;
+  }
 }

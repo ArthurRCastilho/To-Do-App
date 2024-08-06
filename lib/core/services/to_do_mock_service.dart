@@ -21,6 +21,11 @@ class ToDoMockService implements ToDoService {
     _controller?.add(_toDos);
   }
 
+  Future<void> conclued(ToDo toDo) async {
+    toDo.toggleIsConclued();
+    _controller?.add(_toDos);
+  }
+
   Future<ToDo> save(
     String title,
     String description,

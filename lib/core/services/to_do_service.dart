@@ -6,6 +6,8 @@ abstract class ToDoService {
 
   Future<void> remove(ToDo toDo);
 
+  Future<void> conclued(ToDo toDo);
+
   Future<ToDo> save(
     String title,
     String description,
