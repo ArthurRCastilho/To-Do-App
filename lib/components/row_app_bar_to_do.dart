@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class RowAppBarToDo extends StatelessWidget {
   const RowAppBarToDo({
@@ -7,6 +8,9 @@ class RowAppBarToDo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final DateTime dateNow = DateTime.now();
+    final String formattedDate = DateFormat('MMM d ,yyyy').format(dateNow);
+    final String formattedTime = DateFormat('h:mm a').format(dateNow);
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -28,8 +32,8 @@ class RowAppBarToDo extends StatelessWidget {
                 color: const Color(0xffE1E1E3),
               ),
               child: Text(
-                'Jun 10, 2024',
-                style: TextStyle(
+                formattedDate,
+                style: const TextStyle(
                   color: Colors.blue,
                   fontSize: 13,
                 ),
@@ -43,8 +47,8 @@ class RowAppBarToDo extends StatelessWidget {
                 color: const Color(0xffE1E1E3),
               ),
               child: Text(
-                '9:41 AM',
-                style: TextStyle(
+                formattedTime,
+                style: const TextStyle(
                   color: Colors.blue,
                   fontSize: 13,
                 ),

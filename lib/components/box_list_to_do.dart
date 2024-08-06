@@ -20,6 +20,23 @@ class _BoxListToDoState extends State<BoxListToDo> {
     return Dismissible(
       key: ValueKey(widget.toDo.id),
       direction: DismissDirection.endToStart,
+      background: Container(
+        padding: const EdgeInsets.only(right: 20),
+        alignment: Alignment.centerRight,
+        child: const Icon(
+          Icons.delete,
+          color: Colors.white,
+          size: 34,
+        ),
+        decoration: BoxDecoration(
+          color: Colors.red,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        margin: const EdgeInsets.symmetric(
+          horizontal: 15,
+          vertical: 5,
+        ),
+      ),
       onDismissed: (_) {
         ToDoService().remove(widget.toDo);
       },
@@ -31,7 +48,7 @@ class _BoxListToDoState extends State<BoxListToDo> {
             top: 10,
             left: 10,
           ),
-          width: 250,
+          width: 430,
           height: 110,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
