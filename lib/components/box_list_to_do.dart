@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:to_do_app/core/models/to_do.dart';
 import 'package:to_do_app/core/services/to_do_service.dart';
 
@@ -17,6 +18,9 @@ class BoxListToDo extends StatefulWidget {
 class _BoxListToDoState extends State<BoxListToDo> {
   @override
   Widget build(BuildContext context) {
+    final String? dateFormatted = widget.toDo.date == null
+        ? null
+        : DateFormat('MMM d, yyyy').format(widget.toDo.date!);
     return Dismissible(
       key: ValueKey(widget.toDo.id),
       direction: DismissDirection.endToStart,
@@ -91,7 +95,7 @@ class _BoxListToDoState extends State<BoxListToDo> {
                   widget.toDo.date == null
                       ? const SizedBox()
                       : Text(
-                          '${widget.toDo.date!.day}/${widget.toDo.date!.month}/${widget.toDo.date!.year}',
+                          dateFormatted!,
                         ),
                   const SizedBox(width: 40),
                 ],
