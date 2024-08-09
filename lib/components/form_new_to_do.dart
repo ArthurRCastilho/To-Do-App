@@ -19,15 +19,17 @@ class _FormNewToDoState extends State<FormNewToDo> {
 
   String? _validarTitulo(String titulo) {
     if (titulo.length < 4) return 'O titulo precisa ter mais que 5 letras';
-    if (titulo.length >= 16)
+    if (titulo.length >= 16) {
       return 'O titulo não pode conter mais que 15 letras';
+    }
     return null;
   }
 
   String? _validarDescricao(String titulo) {
     if (titulo.length < 4) return 'A descrição necessita pelo menos 5 letras';
-    if (titulo.length > 50)
+    if (titulo.length >= 51) {
       return 'A descrição não pode ter mais que 50 letras';
+    }
     return null;
   }
 
