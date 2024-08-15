@@ -1,5 +1,3 @@
-> :construction: Projeto Em Construção :construction:
-
 # to_do_app
 
 Este é um aplicativo de Lista de Tarefas Simples feito em Flutter. No intuito para eu praticar meus conhecimentos no Framework.
@@ -11,10 +9,9 @@ Se quiser ver mais de como será o Projeto, entre [neste link do Figma](https://
 <img src="./assets/readme/imgs/FigmaProject.jpg" alt="FigmaProject" width="270px"> 
 
 #### O que já foi feito?
-- [ ] HomeScreen;
-- [ ] Card Add ToDo;
-- [ ] Implementação de nova Tarefa;
-- [ ] Provider.
+- [X] HomeScreen;
+- [X] Card Add ToDo;
+- [X] Implementação de nova Tarefa;
 
 ### Dependências
 - ``provider: ^6.1.2``
