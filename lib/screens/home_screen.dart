@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Center(child: Text('Nenhuma tarefa adicionada ainda.')),
                 Center(
                   child: Padding(
-                    padding: const EdgeInsets.all(50.0),
+                    padding: EdgeInsets.all(50.0),
                     child: FloatingButton(),
                   ),
                 ),

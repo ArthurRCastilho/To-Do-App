@@ -27,11 +27,6 @@ class _BoxListToDoState extends State<BoxListToDo> {
       background: Container(
         padding: const EdgeInsets.only(right: 20),
         alignment: Alignment.centerRight,
-        child: const Icon(
-          Icons.delete,
-          color: Colors.white,
-          size: 34,
-        ),
         decoration: BoxDecoration(
           color: Colors.red,
           borderRadius: BorderRadius.circular(20),
@@ -39,6 +34,11 @@ class _BoxListToDoState extends State<BoxListToDo> {
         margin: const EdgeInsets.symmetric(
           horizontal: 15,
           vertical: 5,
+        ),
+        child: const Icon(
+          Icons.delete,
+          color: Colors.white,
+          size: 34,
         ),
       ),
       onDismissed: (_) {

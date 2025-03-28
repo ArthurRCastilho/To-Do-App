@@ -17,6 +17,7 @@ class FloatingButton extends StatelessWidget {
       ),
       onPressed: () {
         showModalBottomSheet(
+          isScrollControlled: true,
           context: context,
           builder: (context) {
             return const FormNewToDo();
@@ -26,4 +27,3 @@ class FloatingButton extends StatelessWidget {
     );
   }
 }
-
