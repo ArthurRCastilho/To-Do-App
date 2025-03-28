@@ -1,0 +1,1 @@
+/Users/arthurlavidali/Projetos Flutter/To-Do-App/build/app/intermediates/cxx/RelWithDebInfo/2w3x2s6g/obj/x86_64

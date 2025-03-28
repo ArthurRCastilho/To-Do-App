@@ -1,0 +1,2 @@
+/Users/arthurlavidali/Projetos Flutter/To-Do-App/android/app/.cxx/RelWithDebInfo/6x3q696q/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/arthurlavidali/Projetos Flutter/To-Do-App/android/app/.cxx/RelWithDebInfo/6x3q696q/arm64-v8a/CMakeFiles/edit_cache.dir
